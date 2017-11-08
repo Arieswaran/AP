@@ -1,0 +1,193 @@
+<html>
+ <head>
+  <title>Shop</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <script src="CSS/shop.js"></script>
+  <style>
+  /* #table{
+    width: 100%; 
+    height: 100%;
+}
+*/
+
+  </style>
+  <arieswaran>
+ </head>
+ <body>
+  <div style="height:18%;width:100%;background-color:blue;overflow:hidden;">
+   <img src="Photos/ap.png" alt="logo" style="float:left;height:100%;width:15%;">
+   <br><br>
+   <input type="text" size=26 placeholder="Search what you want" class="search" style="margin-left:13%">
+   <button class="button">Search</button>
+   <div style="float:right;height:100%;width:20%">
+    <!--
+    <button onclick="location.href='login.html'">Sign in</button>
+    <button onclick="location.href='sign_up.html'">Sign up</button>
+    -->
+    <button id="username" onclick="location.href='profile'">Profile</button>
+    <button onclick="location.href='logout'">Log out</button>
+   </div>
+  </div>
+  <div style="height:10%;width:100%;background-color:red;">
+   <table style="height:100%;width:100%">
+    <tr>
+     <th onclick="location.href='index.html'"><a href="index.html">Home</a></th>
+     <th onclick="location.href='shop'"><a href="shop">Shop</a></th>
+     <th onclick="location.href='about.html'"><a href="about.html">About</a></th>
+     <th onclick="location.href='contact.html'"><a href="contact.html">Contact us</a></th>
+    </tr>
+   </table>
+  </div>
+  <div style="height:200%;width:100%;background-image:url(Photos/bg1.jpg);overflow:hidden">
+   <table style="margin-left:10em">
+    <tr>
+     <td style="color:blue;">Select Category &nbsp</td>
+     
+   <form action="select_category" style="margin-left:6em" method="get">
+    <td>
+    <select name="category">
+     <option value="Dress">Dress</option>
+     <option value="Teddy">Teddy</option>
+     <option value="Laptop">Laptop</option>
+    </select>
+    </td>
+    <td>&nbsp
+    <input type=submit value="submit">
+    </td>
+   </form>
+   </tr>
+   </table >
+   <!-- Time for shopping -->
+   <table id="table" border="1" cellpadding="20" style="width:900px;table-layout:fixed" align=center>
+    <tr>
+     <td> <!-- Make a product item here -->
+      <a href="http://localhost:8081/view?prod=dress1">
+      <img src="Photos/dress1.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      </a>
+      <br>
+      <span>Red Chudi<span>
+      <br>
+      <span>Rs.1524<span>
+     </td>
+     <td> <!-- Make a product item here -->
+     <a href="http://localhost:8081/view?prod=dress2">
+      <img src="Photos/dress2.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      </a>
+      <span>Blue chudi<span>
+      <br>
+      <span>Rs.1524<span>
+     </td>
+     <td> <!-- Make a product item here -->
+     <a href="http://localhost:8081/view?prod=dress3">
+      <img src="Photos/dress3.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      </a>
+      <span>Brown chudi<span>
+      <br>
+      <span>Rs.1453<span>
+     </td>
+     <td> <!-- Make a product item here -->
+     <a href="http://localhost:8081/view?prod=dress4">
+      <img src="Photos/dress4.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      </a>
+      <span>Pink Chudi<span>
+      <br>
+      <span>Rs.990<span>
+     </td>
+
+    </tr>
+    <tr>
+     <td> <!-- Make a product item here -->
+      <a href="http://localhost:8081/view?prod=dress5">
+      <img src="Photos/dress5.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      </a>
+      <span>White Chudi<span>
+      <br>
+      <span>Rs.1824<span>
+     </td>
+     <td> <!-- Make a product item here -->
+     <a href="http://localhost:8081/view?prod=dress6">
+      <img src="Photos/dress6.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      </a>
+      <span>Black Chudi<span>
+      <br>
+      <span>Rs.1524<span>
+     </td>
+     <td> <!-- Make a product item here -->
+     <a href="http://localhost:8081/view?prod=dress7">
+      <img src="Photos/dress7.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      </a>
+      
+      <span>Silver Chudi<span>
+      <br>
+      <span>Rs.1423<span>
+     </td>
+     <td> <!-- Make a product item here -->
+     <a href="http://localhost:8081/view?prod=dress8">
+      <img src="Photos/dress8.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      </a>
+      <span>Brown Saree<span>
+      <br>
+      <span>Rs.1524<span>
+     </td>
+
+    </tr>
+    <tr>
+     <td> <!-- Make a product item here -->
+     <a href="http://localhost:8081/view?prod=dress9">
+      <img src="Photos/dress9.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      </a>
+      <span>Cute Chudi<span>
+      <br>
+      <span>Rs.1423<span>
+     </td>
+     <script> /*
+     <td> <!-- Make a product item here -->
+     <a href="http://localhost:8081/view?prod=teddy10">
+      <img src="Photos/teddy10.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      </a>
+      <span>Aries Teddy<span>
+      <br>
+      <span>Rs.542<span>
+     </td>
+     <td> <!-- Make a product item here -->
+     <a href="http://localhost:8081/view?prod=teddy11">
+      <img src="Photos/teddy11.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      </a>
+      <span>Pavi teddy<span>
+      <br>
+      <span>Rs.633<span>
+     </td>
+    
+     <td> <!-- Make a product item here -->
+      <img src="Photos/headset.jpeg" style="overflow:hidden;height:14%;width:100%;">
+      <br>
+      <span>Head Set<span>
+      <br>
+      <span>Rs.400<span>
+     </td>
+     */
+     </script>
+    </tr>
+
+   </table>
+  </div>
+  <div style="float:left;height:23%;width:100%;background-color:orange;">
+   <br><a href="about.html">About us</a><br>
+   <br><a href="contact.html">Contact us</a><br>
+   <br><a href="help.html">Help</a><br>
+  </div>
+  <script>
+  document.getElementById("username").innerHTML=name;
+  </script>
+ </body>
+</html>

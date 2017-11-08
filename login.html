@@ -1,0 +1,58 @@
+<html>
+ <head>
+  <title>LogIn</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <script src="CSS/main.js"></script>
+ </head>
+ <body>
+  <div style="height:18%;width:100%;background-color:blue;overflow:hidden;">
+   <img src="Photos/ap.png" alt="logo" style="float:left;height:100%;width:15%;">
+   <br><br>
+   <input type="text" size=26 placeholder="Search what you want" class="search" style="margin-left:13%">
+   <button class="button">Search</button>
+   <div style="float:right;height:100%;width:20%">
+    <button onclick="location.href='login.html'">Sign in</button>
+    <button onclick="location.href='sign_up.html'">Sign up</button>
+   </div>
+  </div>
+  <div style="height:10%;width:100%;background-color:red;">
+   <table style="height:100%;width:100%">
+    <tr>
+     <th onclick="location.href='index.html'"><a href="index.html">Home</a></th>
+     <th onclick="location.href='shop'"><a href="shop">Shop</a></th>
+     <th onclick="location.href='about.html'"><a href="about.html">About</a></th>
+     <th onclick="location.href='contact.html'"><a href="contact.html">Contact us</a></th>
+    </tr>
+   </table>
+  </div>
+  <div style="height:50%;width:100%;background-image:url('Photos/bg1.jpg');overflow:hidden;">
+  <center>
+  <br><br><br>
+   <span style="font-size:28pt;"> Login </span> 
+   <br><span id="err"></span><br>
+   <form method="post" name="login" onsubmit="return login1()" action="http://127.0.0.1:8081/process_login">
+    <table tableborder=0>
+     <tr>
+      <td>Username</td>
+      <td><input type="text" id="username" name="username" placeholder="Enter your name here" required></td>
+     </tr>
+     <tr><br></tr>
+     <tr>
+      <td>Password</td>
+      <td><input type="password" id="password" name="password" placeholder="******" required></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td><input type="submit" value="Log in"></td>
+    </table>
+   </form>
+  </center>
+ </div>
+  <div style="float:left;height:23%;width:100%;background-color:orange;">
+   <br><a href="about.html">About us</a><br>
+   <br><a href="contact.html">Contact us</a><br>
+   <br><a href="help.html">Help</a><br>
+  </div>
+  <arieswaran> <!-- Do not remove this Or else You are SCREWED -->
+ </body>
+</html>
